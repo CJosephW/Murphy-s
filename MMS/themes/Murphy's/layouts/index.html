@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang = "us-en">
-    {{partial "head.html" .}}
+    {{ partial "head.html" . }}
     <body >
-        {{ partial "navbar.html"}}
+        {{ partial "navbar.html"  }}
+        {{ partial "hero.html" .Site.Data.hero }}
     </body>
 </html>

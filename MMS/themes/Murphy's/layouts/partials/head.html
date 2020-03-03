@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Montserrat&display=swap" rel="stylesheet">
 
     <!-- Our includes -->
-
-
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
     <!-- Title the bitch -->
     <title>{{ .Site.Title }}</title>
 </head>
