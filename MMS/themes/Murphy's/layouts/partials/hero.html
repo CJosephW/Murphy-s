@@ -1,7 +1,23 @@
+{{ $style := resources.Get "sass/hero.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 <section id = "hero" class = "hero-area">
     <div class = "logo hero-content">
         <div class = "content">
             <img class = "img-fluid" src = "{{ .MurphyLogo }}" alt = "logo" />
+        </div>
+        <div class = 'container'>
+            <div class = 'row'>
+                <div class = "col-sm-4">
+                    <h4 class = 'hero-text'>Affordable</h4>
+                </div>
+                <div class = "col-sm-4">
+                    <h4 class = 'hero-text'>Commercial/Resedential</h4>
+                    <h4 class = 'hero-quote'><i>Enjoy your lawn and family time!</i></h4>
+                </div>
+                <div class = "col-sm-4">
+                    <h4 class = 'hero-text'>Bonded/Insured</h4>
+                </div>
+            </div>
         </div>
     </div>
 </section>
