@@ -1,5 +1,4 @@
-{{ $style := resources.Get "sass/hero.scss" | resources.ToCSS | resources.Minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
 <section id = "hero" class = "hero-area">
     <div class = "logo hero-content">
         <div class = "content">
