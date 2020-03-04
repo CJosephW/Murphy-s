@@ -1,7 +1,7 @@
 .hero-area{
     background-color:black;
-    padding-top: 50px;
-    padding-bottom: 70px;
+    margin-top: 50px;
+    
     .content{
         text-align: center;
         .img-fluid{
@@ -10,3 +10,20 @@
         }
     }
 }
+
+h1{
+    font-family: "Oswald", serif ;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+p{
+    font-family: 'Rubik';
+}
+.container{
+    padding-top: 50px;;
+    padding-bottom: 50px;
+}
+

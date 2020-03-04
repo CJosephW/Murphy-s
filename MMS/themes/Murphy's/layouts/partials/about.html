@@ -1,0 +1,16 @@
+{{ $style := resources.Get "sass/about.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+<div class = 'container' id = 'about'>
+    <h1 class = 'about-header'>About Us</h1>
+    <div class = 'row' id = 'about-content' >
+        <div class = 'col-sm-6'>
+            <img src = "{{ .AboutPlaceholder }}" id = 'about-placeholder'>
+        </div>
+        <div class = 'col-sm-6'>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat orci mauris. Vivamus mollis ante sed leo sagittis iaculis. Suspendisse potenti. Pellentesque bibendum lectus eros, sed sodales mauris tempor eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec aliquet cursus risus vitae eleifend. Sed volutpat augue enim, at mollis est laoreet ac. Nam commodo, neque in lobortis blandit, ligula orci blandit eros, efficitur tempus lectus nisl ac odio. Donec at aliquam ligula. Proin a eleifend risus. Proin mattis, sapien ut ullamcorper accumsan, mauris nisl tincidunt tellus, et tempor eros nisi at ipsum.
+                
+                Nulla ultricies tortor et lobortis ultrices. Vivamus aliquam ex diam, id sagittis nulla aliquam vel. Nulla vel justo risus. Phasellus a velit sit amet urna fermentum suscipit elementum et sapien. Curabitur et consectetur ligula, in mattis leo. Nunc nec mattis metus, gravida ultrices nunc. Integer tincidunt felis et risus rutrum dapibus. Aliquam auctor diam a suscipit dictum. Cras volutpat ante sit amet libero fringilla, nec efficitur ipsum finibus. Praesent aliquam, justo eget posuere ultricies, ante ipsum ultrices dolor, et rutrum enim leo sit amet dui. Vivamus semper enim sit amet ligula eleifend, vitae tempus felis euismod. Nulla ullamcorper mauris non ante mattis, quis volutpat justo scelerisque. Phasellus interdum sed ipsum facilisis cursus. Pellentesque feugiat molestie velit in volutpat.</p>
+        </div>
+    </div>
+</div>

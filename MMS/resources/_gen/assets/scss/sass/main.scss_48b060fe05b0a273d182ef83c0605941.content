@@ -1,1 +1,1 @@
-.hero-area{background-color:#000;padding-top:50px;padding-bottom:70px}.hero-area .content{text-align:center}.hero-area .content .img-fluid{width:50%}
+.hero-area{background-color:#000;margin-top:50px}.hero-area .content{text-align:center}.hero-area .content .img-fluid{width:50%}h1{font-family:oswald,serif;font-weight:bolder;text-align:center;justify-content:center;margin-bottom:40px}p{font-family:rubik}.container{padding-top:50px;padding-bottom:50px}
