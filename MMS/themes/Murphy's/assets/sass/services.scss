@@ -1,3 +1,37 @@
 #services{
+    padding-top:50px;
     background-color: #ffffcc;
+    #img-head{
+        text-align: center;
+        
+        display:flex;
+        align-self: center;
+        justify-content: center;
+            
+        
+    }
 }
+#lawn-image{
+    border: solid 1px black;
+}
+#snow-image{
+    width: 85%;
+    height: 75%;
+}
+#winter-services{
+    padding-top:50px;
+    background-color:white;
+    #img-head{
+        text-align: center;
+        
+    }
+    
+    table{
+        table-layout: fixed;
+        th{
+            align: center;
+        }
+    }
+}
+
+    
