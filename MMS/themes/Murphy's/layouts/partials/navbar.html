@@ -1,5 +1,4 @@
-{{ $style := resources.Get "sass/navbar.scss" | resources.ToCSS | resources.Minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
 <nav class = "navbar navbar-expand-sm fixed-top navbar-custom  " style = "background-color:black;">
         
     <a class = "navbar-brand" href = "#">Home</a>
