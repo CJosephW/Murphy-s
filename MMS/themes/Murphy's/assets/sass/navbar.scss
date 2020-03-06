@@ -2,11 +2,13 @@
 .navbar-custom .navbar-text {
     color:#ffff80;
     font-family: "Oswald", serif ;
+    text-shadow: 1px 1px 1px #000;
 }
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
     color:  #cccccc;
+    text-shadow: 1px 1px 1px #000;
 }
 
 
@@ -16,10 +18,13 @@
     color: #ffffff;
 }
 
-.navbar-custom.scrolled {
-    background-color:white;
-    transition: background-color 200ms linear;
+.navbar.fixed-top {
+    
+   
 }
 .navbar-nav .nav-link{
     font-family: "Oswald", serif ;
+}
+#main-nav{
+    background-color:black;
 }
