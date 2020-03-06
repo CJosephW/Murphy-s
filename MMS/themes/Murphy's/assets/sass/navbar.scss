@@ -1,6 +1,7 @@
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color:#ffff80
+    color:#ffff80;
+    font-family: "Oswald", serif ;
 
 }
 
@@ -19,4 +20,7 @@
 .navbar-custom.scrolled {
     background-color:white;
     transition: background-color 200ms linear;
+}
+.link-text{
+    font-family: "Oswald", serif ;;
 }
