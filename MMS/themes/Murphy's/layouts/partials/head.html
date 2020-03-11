@@ -21,7 +21,7 @@
     <!-- Our includes -->
     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <!-- Title the bitch -->
+    
     <title>{{ .Site.Title }}</title>
-
+    
 </head>

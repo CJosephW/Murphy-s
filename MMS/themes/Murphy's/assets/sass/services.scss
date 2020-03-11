@@ -1,6 +1,6 @@
 #services{
     padding-top:50px;
-    background-color: #ffffcc;
+    background-color: black;
     #img-head{
         text-align: center;
         
@@ -10,14 +10,38 @@
             
         
     }
+    #services-header{
+        color:grey;
+        padding-bottom: 10px;
+  
+}
+    ul{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        border-top: yellow solid 2px;
+        border-bottom: yellow solid 2px;
+        padding:10px;
+        li{
+            font-family: 'Oswald';
+            font-weight: bold;
+            margin:auto;
+            color:grey;
+           
+        }
+    }
 }
 #lawn-image{
-    border: solid 1px black;
     
 }
 #snow-image{
     width: 85%;
     height: 75%;
+    box-shadow: 5px 5px 8px -4px grey;
 }
 #winter-services{
     padding-top:50px;
@@ -25,6 +49,25 @@
     #img-head{
         text-align: center;
         
+    }
+    ul{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        border-top: yellow solid 2px;
+        border-bottom: yellow solid 2px;
+        padding:10px;
+        li{
+            font-family: 'Oswald';
+            font-weight: bold;
+            margin:auto;
+            color:grey;
+           
+        }
     }
     
     table{
@@ -36,3 +79,9 @@
 }
 
     
+#summer-table{
+    padding-top:0px;
+}
+#winter-table{
+    padding-top:0px;
+}

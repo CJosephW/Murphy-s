@@ -1,47 +1,35 @@
 <div id = 'services'>
     
-    <h1>What We Offer:</h1>
+    <h1 id = services-header>What We Offer:</h1>
     
     <div class = 'container' id = 'img-head'>
        <img class = "img-fluid" src = "{{ .LawnImage }}" id = "lawn-image">
     </div>
 
-    <div class = 'container'>
-        <div>
-            <table class = 'table'>
-                <thead>
-                    <tr>
-                        <th>Lawn Maintenace</th>
-                        <th>Trimming</th>
-                        <th>Mulching</th>
-                        <th>Shrub Trimming</th>
-                        <th>Weed Control</th>
-                        <th>Fertilization</th>
-                        <th>Irrigation</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
+    <div class = 'container' id = "summer-table">
+        <ul>
+            <li>Lawn Maintenace</li>
+            <li> Trimming</li>
+            <li>Mulching</li>
+            <li>Shrub trimming</li>
+            <li>Weed Control</li>
+            <li> Fertilization</li>
+            <li> Irrigation</li>
+        </ul>        
     </div>
     
 </div>
 <div id = 'winter-services'>
     <div class = 'container' id = 'img-head'>
         <img class = "img-fluid" src = "{{ .SnowImage }}" id = "snow-image">
-        </div>
+    </div>
     
-        <div class = 'container'>
-            <div class = 'table-responsive'>
-            <table class = 'table'>
-                <thead>
-                    <tr>
-                        <th>Snow Plowing</th>
-                        <th>Salting</th>
-                        <th>Salt Delivery</th>
-                        <th>Snow Clearing</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
+    <div class = 'container' id = "winter-table">
+            <ul>
+                <li>Snow Plowing</li>
+                <li>Salting</li>
+                <li>Salt Delivery</li>
+                <li>Snow Clearing</li>
+            </ul>
     </div>
 </div>

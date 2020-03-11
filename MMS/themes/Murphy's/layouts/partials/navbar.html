@@ -1,5 +1,5 @@
 
-<nav class = "navbar navbar-expand-sm fixed-top navbar-custom  " style = "background-color:black;">
+<nav class = "navbar navbar-expand-sm  navbar-custom fixed-top " id = 'main-nav' >
         
     <a class = "navbar-brand" href = "#">Home</a>
     
@@ -16,3 +16,15 @@
     </ul>
 
 </nav>
+<script>
+        var nav = document.getElementById('main-nav');
+    
+        window.onscroll = function() {
+            if (document.documentElement.scrollTop >= 30) {
+                nav.classList.add("bg-transparent");
+
+            } else {
+                nav.classList.remove("bg-transparent");
+            }
+        }
+    </script>
