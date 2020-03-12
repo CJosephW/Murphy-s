@@ -1,0 +1,52 @@
+#contact-header{
+    margin-bottom: 50px;
+    
+}
+#contact{
+    .row{
+
+        
+        #phone-icon{
+            width: 50px;
+            height: 50px;
+            padding:0px;
+            margin:0px;
+            
+        
+        }
+    }    
+}
+
+h2{
+    font-family: 'Oswald';
+
+
+}
+
+#email-icon{
+    padding:0px;
+    margin:0px;
+    width: 70px;
+    height: 70px;
+   
+}
+#phone-row{
+        align-items: center;
+        display:flex;
+        border: solid 5px black;
+        border-radius: 30px;
+        margin:10px;
+        vertical-align: middle;
+        padding:10px;
+        h2{
+            vertical-align: middle;
+        }
+}
+#email-row{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    border: solid 5px black;
+    border-radius: 30px;
+    margin:10px;
+}
