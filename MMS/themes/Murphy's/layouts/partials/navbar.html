@@ -1,30 +1,22 @@
+<nav id="main-nav" class="navbar navbar-dark bg-transparent navbar-expand-md">
+    <a class="navbar-brand" href="#">
+        <img class="img-fluid" src="{{ .MurphyLogo }}" alt="{{ .BrandText }}" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSupport" onclick="document.getElementById('main-nav').classList.toggle('menu-shown')" aria-controls="navSupport" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navSupport">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
 
-<nav class = "navbar navbar-expand-sm  navbar-custom fixed-top " id = 'main-nav' >
-        
-    <a class = "navbar-brand" href = "#">Home</a>
-    
-    <ul class = "navbar-nav ml-auto">
-        <li class = "nav-item">
-            <a class = "nav-link link-text" href = "#about">About</a>
-        </li>
-        <li class = "nav-item">
-            <a class = "nav-link link-text" href = "#services">Services</a>
-        </li>
-        <li class = "nav-item">
-            <a class = "nav-link link-text" href = "#contact">Contact</a>
-        </li>
-    </ul>
-
+        </ul>
+    </div>
 </nav>
-<script>
-        var nav = document.getElementById('main-nav');
-    
-        window.onscroll = function() {
-            if (document.documentElement.scrollTop >= 30) {
-                nav.classList.add("bg-transparent");
-
-            } else {
-                nav.classList.remove("bg-transparent");
-            }
-        }
-    </script>

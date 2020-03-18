@@ -31,12 +31,19 @@
             font-weight: bold;
             margin:auto;
             color:grey;
-           
+            
+            @media screen and (max-width: 767px) {
+                padding:10px;
+                font-size: x-small;
+                text-align: center;
+            
+            }
         }
     }
 }
 #lawn-image{
-    
+    width:65%;
+    height:40%;
 }
 #snow-image{
     width: 85%;
@@ -61,12 +68,20 @@
         border-top: yellow solid 2px;
         border-bottom: yellow solid 2px;
         padding:10px;
+        
+    
         li{
             font-family: 'Oswald';
             font-weight: bold;
             margin:auto;
             color:grey;
-           
+            @media screen and (max-width: 767px) {
+                padding:5px;
+                font-size: small;
+                text-align: center;
+            
+            }
+
         }
     }
     

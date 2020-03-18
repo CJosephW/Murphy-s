@@ -1,30 +1,82 @@
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color:#ffff80;
-    font-family: "Oswald", serif ;
-    text-shadow: 1px 1px 1px #000;
-}
 
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color:  #cccccc;
-    text-shadow: 1px 1px 1px #000;
-}
-
-
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: #ffffff;
-}
-
-.navbar.fixed-top {
-    
-   
-}
-.navbar-nav .nav-link{
-    font-family: "Oswald", serif ;
-}
 #main-nav{
     background-color:transparent;
 }
+.navbar-toggler{
+    background-color: black;
+}
+@mixin transparent {
+    background-color: rgba(0,0,0,0);
+    .navbar-toggler span { color: #fff !important }
+    #navSupport .navbar-nav a { color: #ccc !important; }
+    #navSupport .navbar-nav a {
+        &:hover, &.active { color: #fff !important; }
+    } 
+    .navbar-brand { 
+        color: #fff !important; 
+        filter: invert(1);
+    }
+
+    @media screen and (max-width: 767px) {
+        &.menu-shown {
+            background: #0f0f0f !important;
+        }
+    }
+}
+
+#main-nav {
+    padding: 15px 30px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    transition: background-color .3s;
+
+    &.bg-transparent {
+        @include transparent;
+    }
+
+    #navSupport {
+        justify-content: space-between;
+        .social-nav {
+            li a {
+                font-size: 1.5rem;
+                margin: 0 15px;
+            }
+
+            flex-direction: row !important;
+        }
+
+        li a {
+            font-family: "Oswald", serif ;
+            text-shadow: 1px 1px 1px #000;
+            transition: color .3s;
+        }
+
+        li a.active {
+            color: #000;
+            text-shadow: 1px 1px 1px #000;
+        }
+    }
+
+    .navbar-toggler {
+        border: white;
+
+        &:focus {
+            outline: white;
+        }
+    }
+
+    .navbar-brand {
+        
+        font-size: 1.5rem;
+
+        img {
+            max-width: 80px;
+        }
+
+        @media screen and (max-width: 992px) {
+            img { max-width: 60px; }
+        }
+    }
+}
+

@@ -2,7 +2,20 @@
     display: flex;
     align-items: center;
     text-align: center;
+   
 }
+
 #about-placeholder{
     box-shadow: 5px 10px 8px -4px #888888;
+    height: 450px;
+    width: 350px;
+    margin-top:25px;
+    image-orientation: from-image;
+    
+    @media screen and (max-width: 767px) {
+        width: 70%;
+        height: 70%;
+        margin-bottom:35px;
+        
+    }
 }

@@ -1,17 +1,21 @@
 #contact-header{
     margin-bottom: 50px;
-    
 }
 #contact{
+    padding-top:0px;
     .row{
-
         
         #phone-icon{
+
             width: 50px;
             height: 50px;
             padding:0px;
             margin:0px;
-            
+            @media screen and (max-width: 767px) {
+               
+                    height: 30px;
+                    width: 30px;
+            }    
         
         }
     }    
@@ -19,35 +23,62 @@
 
 h2{
     font-family: 'Oswald';
-
-
+    padding-left:0px;
+    
 }
-
+#email-text{
+    padding:0px;
+}
 #email-icon{
     padding:0px;
     margin:0px;
     width: 70px;
     height: 70px;
-   
+    @media screen and (max-width: 767px) {
+        width:50px;
+        height:50px;
+    
+       }
 }
 #phone-row{
         align-items: center;
         display:flex;
         border: solid 5px black;
         border-radius: 30px;
-        margin:10px;
         vertical-align: middle;
         padding:10px;
-        h2{
+        margin:5px;
+
+
+        a h2{
             vertical-align: middle;
+        }
+        @media screen and (max-width: 767px) {
+           a h2{
+                font-size: x-small;
+                text-align: center;
+
+            }
         }
 }
 #email-row{
-    justify-content: center;
     align-items: center;
     display:flex;
+    flex-direction: row;
     border: solid 5px black;
     border-radius: 30px;
-    margin:10px;
-    padding:0px;
+    
+    margin:5px;
+    h2{
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width: 767px) {
+       a h2{
+            font-size: x-small;
+            padding-left: 0px;
+            margin:5px;
+
+        }
+    }
 }
