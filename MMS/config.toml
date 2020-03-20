@@ -6,4 +6,4 @@ theme = "Murphy's"
 
 [[deployment.targets]]
 name = "s3"
-URL = "s3://murphys-mow-and-snow.com?region=us-west-2"
+URL = "s3://murphysmowandsnow.com?region=us-west-2"
